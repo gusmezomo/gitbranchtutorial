@@ -125,16 +125,6 @@ git push -u origin main
 
 ---
 
-## 🌍 Visualização
-Este repositório inclui exemplos visuais (prints) do processo completo:
-- Criação de commits
-- Branches paralelas
-- Conflitos e resolução
-- Uso do reflog para recuperação
-- Merge e rebase
-- Fluxo completo de Pull Request
-
----
 Restaurar
 ```bash
 git branch -vv
@@ -176,6 +166,18 @@ Você tivesse criado o repositório com `git init`, e não fosse um clone
 Ou tivesse removido o remote por acidente
 
 Ou quisesse adicionar outro repositório remoto
+
+---
+
+## 🌍 Visualização
+Este repositório inclui exemplos visuais (prints) do processo completo:
+- Criação de commits
+- Branches paralelas
+- Conflitos e resolução
+- Uso do reflog para recuperação
+- Merge e rebase
+- Fluxo completo de Pull Request
+
 ---
 
 ## 🎓 Objetivo
