@@ -143,7 +143,39 @@ cd gitbranchtutorial
 git branch -a         # pra ver as branches remotas
 git switch novabranch # ou qualquer outra branch remota
 ```
+---
+## 🚚 Clonar o repositório após apagar a pasta local
 
+Após fazer o push de todas as alterações para o GitHub, é seguro apagar a pasta local.
+Para restaurar o repositório em qualquer lugar:
+
+```bash
+git clone https://github.com/seu-usuario/repositorio.git
+cd repositorio
+```
+
+Após o clone, não é necessário usar `git remote add origin`, pois o Git já configura isso automaticamente. 
+
+Para confirmar:
+
+```bash
+git remote -v
+```
+
+Resultado esperado:
+```
+origin  https://github.com/seu-usuario/repositorio.git (fetch)
+origin  https://github.com/seu-usuario/repositorio.git (push)
+```
+
+Depois disso, você pode continuar trabalhando normalmente com `git add`, `commit` e `push`.
+
+Você só usaria `git remote add origin` se:
+Você tivesse criado o repositório com `git init`, e não fosse um clone
+
+Ou tivesse removido o remote por acidente
+
+Ou quisesse adicionar outro repositório remoto
 ---
 
 ## 🎓 Objetivo
