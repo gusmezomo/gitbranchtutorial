@@ -4,3 +4,7 @@ esse vai ser o terceiro commit, apagando "sem querer" o resto dos textos.
 apenas para o commit da nova branch
 
 linha main depois do rebase
+
+linha secreta que vai sumir
+
+linha de test do pull request
