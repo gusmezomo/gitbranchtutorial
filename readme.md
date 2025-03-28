@@ -17,6 +17,21 @@ git init
 git add .
 git commit -m "Primeiro commit"
 ```
+![imagem](img/print2.png)
+
+---
+
+### 3. `git checkout`
+- Usado para navegar entre commits ou arquivos
+- Também pode ser usado para voltar a commits antigos sem afetar o branch principal
+
+```bash
+git checkout <hash-do-commit>         # vai para um commit específico (modo detached HEAD)
+git checkout nome-da-branch           # muda para outra branch
+git checkout -b nova-branch <hash>    # cria uma nova branch a partir de um commit
+```
+> Muito útil para "observar" estados anteriores sem alterar a linha do tempo
+![imagem](img/print5.png)
 
 ---
 
@@ -28,7 +43,8 @@ git branch nome-da-branch      # cria uma branch
 git switch nome-da-branch      # troca para a branch
 git switch -c nova-branch      # cria e troca
 ```
-
+![imagem](img/print7.png)
+![imagem](img/print9.png)
 ---
 
 ### 3. Merge (junção de branches)
@@ -37,6 +53,8 @@ git switch main
 git merge nome-da-branch
 ```
 > Inclui resolução de conflitos com VSCode
+![imagem](img/print10.png)
+![imagem](img/print12.png)
 
 ---
 
@@ -46,6 +64,8 @@ git switch minha-feature
 git rebase main
 ```
 > Usado para manter o histórico linear e limpo
+![imagem](img/print13.png)
+![imagem](img/print16.png)
 
 ---
 
@@ -55,6 +75,7 @@ git reset --soft HEAD~1      # volta, mas mantém arquivos
 git reset --mixed HEAD~1     # volta e tira do staging
 git reset --hard HEAD~1      # volta e apaga tudo
 ```
+![imagem](img/print20.png)
 
 ---
 
@@ -82,6 +103,8 @@ git branch -D nome     # remove forçado
 
 git push origin --delete nome  # remove do GitHub
 ```
+![imagem](img/print18.png)
+![imagem](img/print19.png)
 
 ---
 
@@ -107,8 +130,6 @@ Este repositório inclui exemplos visuais (prints) do processo completo:
 - Uso do reflog para recuperação
 - Merge e rebase
 - Fluxo completo de Pull Request
-
-(*Adicionar imagens na pasta `img/` e referenciar aqui usando `![descricao](img/nome.png)`*)
 
 ---
 
