@@ -169,6 +169,23 @@ Ou quisesse adicionar outro repositório remoto
 
 ---
 
+## Quer excluir o repositório Git da pasta (desvincular)? ⚠️CUIDADO
+Se você quer remover o repositório Git de dentro da pasta, e não só "fechar", aí é outra coisa:
+
+No terminal dentro da pasta do projeto
+```bash
+rm -rf .git
+```
+⚠️ Isso apaga todo o histórico Git da pasta — use com cuidado.
+
+Se quiser só desvincular do repositório remoto (GitHub), sem apagar tudo:
+
+```bash
+git remote remove origin
+```
+
+---
+
 ## 🌍 Visualização
 Este repositório inclui exemplos visuais (prints) do processo completo:
 - Criação de commits
