@@ -21,7 +21,7 @@ git commit -m "Primeiro commit"
 
 ---
 
-### 3. `git checkout`
+### 2. `git checkout`
 - Usado para navegar entre commits ou arquivos
 - Também pode ser usado para voltar a commits antigos sem afetar o branch principal
 
@@ -35,7 +35,7 @@ git checkout -b nova-branch <hash>    # cria uma nova branch a partir de um comm
 
 ---
 
-### 2. Branches
+### 3. Branches
 - Criação e troca de branches
 
 ```bash
@@ -47,7 +47,7 @@ git switch -c nova-branch      # cria e troca
 ![imagem](img/print9.png)
 ---
 
-### 3. Merge (junção de branches)
+### 4. Merge (junção de branches)
 ```bash
 git switch main
 git merge nome-da-branch
@@ -58,7 +58,7 @@ git merge nome-da-branch
 
 ---
 
-### 4. Rebase (reescreve o histórico)
+### 5. Rebase (reescreve o histórico)
 ```bash
 git switch minha-feature
 git rebase main
@@ -69,7 +69,7 @@ git rebase main
 
 ---
 
-### 5. Reset (voltar no tempo)
+### 6. Reset (voltar no tempo)
 ```bash
 git reset --soft HEAD~1      # volta, mas mantém arquivos
 git reset --mixed HEAD~1     # volta e tira do staging
@@ -79,7 +79,7 @@ git reset --hard HEAD~1      # volta e apaga tudo
 
 ---
 
-### 6. Reflog (histórico secreto do Git)
+### 7. Reflog (histórico secreto do Git)
 ```bash
 git reflog                   # mostra tudo que o HEAD fez
 git switch -c recuperado <hash>  # recria branch perdida
@@ -88,7 +88,7 @@ git switch -c recuperado <hash>  # recria branch perdida
 
 ---
 
-### 7. Restaurar arquivos
+### 8. Restaurar arquivos
 ```bash
 git restore nome.txt              # desfaz mudanças locais
 git restore --staged nome.txt    # remove do staging
@@ -96,7 +96,7 @@ git restore --staged nome.txt    # remove do staging
 
 ---
 
-### 8. Remover branches
+### 9. Remover branches
 ```bash
 git branch -d nome     # remove local
 git branch -D nome     # remove forçado
@@ -108,17 +108,20 @@ git push origin --delete nome  # remove do GitHub
 
 ---
 
-### 9. Push para GitHub
+### 10. Push para GitHub
 ```bash
 git remote add origin https://github.com/seu-usuario/repositorio.git
 git push -u origin main
 ```
+![imagem](img/print23.png)
 
 ---
 
-### 10. Pull Request
+### 11. Pull Request
 - Criado pelo GitHub com botão "Compare & pull request"
 - Revisado, mesclado e branch deletada
+
+![imagem](img/print22.png)
 
 ---
 
