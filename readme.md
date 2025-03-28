@@ -135,6 +135,16 @@ Este repositório inclui exemplos visuais (prints) do processo completo:
 - Fluxo completo de Pull Request
 
 ---
+Restaurar
+```bash
+git branch -vv
+git clone https://github.com/gusmezomo/gitbranchtutorial.git
+cd gitbranchtutorial
+git branch -a         # pra ver as branches remotas
+git switch novabranch # ou qualquer outra branch remota
+```
+
+---
 
 ## 🎓 Objetivo
 Este repositório foi usado como ambiente de aprendizagem prática do Git e GitHub.
